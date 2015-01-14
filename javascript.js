@@ -8,11 +8,30 @@ newList.appendChild(newListText);
 
 document.getElementById("list").appendChild(newList);
 }else{ alert("Something did't load properly!")}
+/////////////////////////////////////
+var myImage = document.getElementById("lol");
+
+var imageArray = ["images/test picture.png","images/Searches.png","images/User Folder.png", "images/Videos.png" ];
+var imageIndex = 0;
+
+function changeImage() {
+	myImage.setAttribute("src",imageArray[imageIndex]);
+	imageIndex++;
+	if (imageIndex >= imageArray.length) {
+		imageIndex = 0;
+	}
+}
+
+// setInterval is also in milliseconds
+var intervalHandle = setInterval(changeImage,1000);
+
+myImage.onclick =  function() {
+	clearInterval(intervalHandle);
+};
 
 
 
-
-
+//////////////////////////////////////////////////////////////
 
 /*var banana;
 var promena = prompt("If you have 2 cakes and you eat one, how many trees you have left?");

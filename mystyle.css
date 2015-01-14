@@ -1,19 +1,16 @@
-#list {
-font-size: 18 pt;
-font-family: Times New Roman;
-background-color: #FFF8DC; 
-
+h2 {
+	font-size: 14pt;
+	background-color: #FFCCCC;
+	margin: 0;
 }
 
 p {
-	background-color:#FFF8DC ;
+	font-size: 12pt;
+	background-color: #66CC99;
+	margin: 0;
 }
 
-	#jot {
-		background-color: yellow;
-	}
-
-.loko {
-	background-color: red;
+div {
+	
+	margin: 0;
 };
-
